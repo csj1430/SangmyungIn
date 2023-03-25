@@ -1,0 +1,12 @@
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select {margin:0; padding:0;}
+body,input,textarea,select,button,table{font-family: 'Noto Sans KR', sans-serif;font-size:12px;}
+img,fieldset{border:0;}
+ul,ol {list-style:none}
+em,address{font-style:normal;}
+a:hover,a:active,a:focus{text-decoration: none;}
+a { text-decoration:none !important }
+a:hover { text-decoration:none !important }
+.hidden {position:absolute;overflow:hidden;clip:rect(0 0 0 0); margin: 1px; width:1px; height:1px;}
+.clearfix::after {content:""; display:table; clear:both;}
+img {vertical-align: bottom;}

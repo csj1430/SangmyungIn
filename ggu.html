@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/smincl.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <style>
+      a { text-decoration:none }
+      #title{
+        color: #2E75B6;
+        text-align: center;
+      }
+      #subsearch{
+        font-size: 20px;
+        width: 200px;
+        padding: 0px;
+        border: 0px;
+        margin-left: 80%;
+        margin-bottom: 8px;
+        outline: dotted;
+        outline-color: #BFBFBF;
+        float: left;
+      }
+      #subbutton{
+        width: 40px;
+        height: 90%;
+        border: 0px;
+        background: #7F7F7F;
+        outline: none;
+        margin-top: 5px;
+        margin-left: -50px;
+        color: #ffffff;
+        font-size: 15px;
+      }
+      #number{
+        width: 5%;
+        text-align: center;
+        margin-left: 5%;
+      }
+      #boardtitle{
+        width: 50%;
+        text-align: center;
+        border-left: solid 1px black;
+      }
+      #name{
+        width: 15%;
+        text-align: center;
+        border-left: solid 1px black;
+      }
+      #day{
+        width: 7%;
+        text-align: center;
+        border-left: solid 1px black;
+      }
+      .table{
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      #Original{
+        margin-left: 7%;
+      }
+      .boradtext{
+        margin-left: 7%;
+        margin-right: 7%;
+      }
+    </style>
+    <title>중앙동아리</title>
+</head>
+    <body>
+        <div id="wrap">
+            <header>
+                <div class="main_intro">
+                    <div class="logo"><a href="../index.html"><img src="./image/logo2.png" alt="상명로고"></a></div>
+                </div>
+            </header>
+            <div id="container">
+                <section class="navi clearfix">
+                    <div class="search_box">
+                        <form>
+                            <input type="text" placeholder="search">
+                            <button>찾아보기</button>
+                        </form>
+                    </div>
+                    <div class="navi_box">
+                       <div class="navi_inner">
+                            <div class="form_box">
+                                <h1>LOGIN</h1>
+                                <form>
+                                    <div class="id">
+                                        <span>ID</span>
+                                        <input type="text" placeholder="아이디">
+                                    </div>
+                                    <div class="pw">
+                                         <span>PW</span>
+                                        <input type="text" placeholder="비밀번호">
+                                    </div>
+                                    <button>로그인</button>
+                                </form>
+                                <div class="login">
+                                    <ul>
+                                        <li><a href="#">회원가입</a></li>
+                                        <li><a href="#">아이디 / 비밀번호 찾기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="nav">
+                                <nav>
+                                    <h1 class="hidden">상명네비게이션</h1>
+                                    <ul>
+                                      <li><a href="AC.html">학사일정</a></li>
+                                      <li><a href="noice_board.html">통합공지사항</a></li>
+                                      <li><a href="question_board.html">질문있어요</a></li>
+                                      <li><a href="Recommend.html">추천교양</a></li>
+                                      <li><a href="CentralClub.html">중앙동아리</a></li>
+                                      <li><a href="schoolmap.html">학교지도</a></li>
+                                      <li><a href="sangmyungcatboard.html">상냥이게시판</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                       </div>
+                    </div>
+                </section>
+                <section class="content clearfix">
+                    <div class="subnav">
+                        <ul>
+                            <li><a href="#"><strong>< 바로가기 ></strong></a></li>
+                            <li><a href="#">상명대학교 홈페이지</a></li>
+                            <li><a href="#">상명대학교 e-campus</a></li>
+                            <li><a href="#">에브리타임</a></li>
+                        </ul>
+                    </div>
+                    <div class="maincontents" style="">
+                        <h2 id="title"style = "font-size: 30px;">중앙동아리</h2>
+                        <hr style="border: solid 2px #5B9BD5;" width=100% noshade/>
+                        <div class="seach">
+                          <input id="subsearch" type="text">
+                          <button id="subbutton">검색</button>
+                        </div>
+                        <hr style="border: solid 2px #BDD7EE;" width="100%" noshade/>
+                        <div class="table">
+                          <table id="borad"style="font-size: 15px;">
+                            <tr>
+                              <td id="number">4</td>
+                              <td id="boardtitle">꾸러기방</td>
+                              <td id="name">관리자</td>
+                              <td id="day">2021-11-15</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <hr style="border: solid 2px #BDD7EE;" width="100%" noshade/>
+                        <a id="Original" href="https://everytime.kr/418765/v/176048577" target="_blank">원본</a>
+                        <hr style="border: solid 2px #BDD7EE;" width="100%" noshade/>
+                        <div class="boradtext" style="font-size: 20px;">
+                          <img src="image/grgb.jpg" width="427" height="569">
+                          <p>교육봉사 동아리. 초등학생들에게 멘토링 활동</p>
+                        </div>
+                        <hr style="border: solid 2px #5B9BD5;" width=100% noshade/>
+                        </div>
+                </section>
+            </div>
+       </div>
+    </body>
+</html>

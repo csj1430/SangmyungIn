@@ -1,0 +1,63 @@
+a { color: #000; }
+
+#wrap { min-width: 1860px; height: 100%; }
+header { width: 100%; height: 75px; padding-top: 60px; display: flex; justify-content: center; }
+.main_intro { width: 200px; height: 100%; }
+.logo { width: 100%; height: 100%; }
+.logo > a { display: block; width: 100%; height: 100%; }
+
+.navi { width: 310px; height: 100%; padding-top: 50px; margin-left: 140px; float: left; }
+.search_box > form { width: 100%; height: 40px; background: #003d91; }
+.search_box > form > input { width: 265px; height: 100%; box-sizing: border-box; border-radius: 0; border: 2px solid #809ec8; font-size: 16px; padding-left: 10px; }
+.search_box button { width: 40px; height: 40px; display: inline-block; text-indent: -9999px; background: url("../image/search_e.png") no-repeat center center; border: none; cursor: pointer; }
+
+.navi_box { width: 100%; height: 680px; margin-top: 50px; background: #003d91; }
+.navi_inner { width: 100%; height: 100%; padding-top: 30px; }
+.form_box { width: 80%; height: 220px; background: #fff; margin: 0 auto; }
+.form_box h1 { padding: 15px 0 15px 10px; font-size: 20px; }
+.form_box span { font-size: 14px; color: #383835; }
+
+.id, .pw { width: 230px; height: 30px; margin-left: 10px; }
+.pw { margin-top: 5px; }
+.id > input, .pw > input { width: 200px; height: 100%; box-sizing: border-box; border: 2px solid #b4b4b4; border-radius: 2px; font-size: 14px; padding-left: 8px; }
+.id > input { margin-left: 10px; }
+.pw > input { margin-left: 2px; }
+.form_box > form > button { display: flex; justify-content: center; align-items: center; width: 65px; height: 35px; font-size: 16px; box-sizing: border-box; border: 2px solid #383835; border-radius: 5px; margin: 10px auto 0; }
+.form_box > form > button:hover { border: 2px solid #003d91; background: #003d91; color: #fff; transition: 0.2s; }
+
+.login ul { width: 100%; height: 10px; display: flex; justify-content: center; margin-top: 10px; }
+.login ul > li:first-child { width: 25%; height: 100%; }
+.login ul > li:last-child { width: 55%; }
+.login ul > li > a { font-size: 14px; border-bottom: 1px solid #383835; }
+.login ul > li > a:hover { color: #003d91; transition: 0.2s; }
+
+.nav { width: 80%; margin: 0 auto; }
+nav > ul { width: 100%; height: 100%; margin-top: 20px; }
+nav > ul > li { width: 100%; height: 55px; box-sizing: border-box; border-bottom: 2px solid #fff; }
+nav > ul > li:last-child { border: none; }
+nav > ul > li > a { font-size: 22px; color: #fff; display: flex; width: 100%; height: 100%; justify-content: center; align-items: center; }
+nav > ul > li > a:hover { background: #fff; color: #003d91; transition: 0.2s; }
+
+.content { width: 64%; height: 860px; float: right; margin-right: 140px; padding-top: 50px; }
+.subnav { width: 100%; height: 40px; display: flex; justify-content: flex-end; margin-bottom: 50px; }
+.subnav > ul { width: 55%; height: 100%; display: flex; justify-content: space-between; }
+.subnav > ul > li:nth-child(2) { width: 150px; }
+.subnav > ul > li:nth-child(3) { width: 140px; }
+.subnav > ul > li > a { display: flex; width: 100%; height: 100%; font-size: 14px; color: #383835; align-items: center; justify-content: center; }
+.subnav > ul > li > a:hover { color: #003d91; }
+
+.left_content { float: left; width: 380px; }
+.campus_map { width: 100%; height: 450px; }
+.campus_map h1 { width: 100%; font-size: 26px; color: #2e75b6; text-align: center; margin-bottom: 20px; }
+.map { width: 380px; height: 380px; box-shadow: 3px 3px 4px 4px gray; }
+.slide { width: 380px; height: 250px; background: #003d91; margin-top: 25px; }
+
+.right_content { float: right; width: 65%; height: 720px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+.right_content h2, .right_content h3, .right_content h4, .right_content h5 { width: 100%; font-size: 26px; color: #2e75b6; text-align: center; margin-bottom: 20px; }
+.right_content h4, .right_content h5 { margin-top: 20px; }
+.right_content h5 { width: 370px; }
+
+.notice_box, .recommend_box { width: 370px; height: 250px; border: 2px solid #2e75b6; border-style: dashed; box-sizing: border-box; }
+.calendar_box { width: 370px; height: 335px; background: #ccc; }
+.club { width: 421px; display: flex; flex-direction: column; align-items: flex-end; }
+.club_box { width: 370px; height: 335px; border: 2px solid #2e75b6; border-style: dashed; box-sizing: border-box; }

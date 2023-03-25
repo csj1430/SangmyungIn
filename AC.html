@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/smincl.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/board.css">
+    <style>
+    /* 리셋 CSS */
+    * {margin:0;padding:0;box-sizing:border-box;}
+    ul, li {list-style:none;}
+
+
+    .slidebox {max-width:700px;margin:0 auto;position:relative;}
+    .slidebox .slidelist {position:relative;white-space:nowrap;font-size:0;overflow:hidden;}
+    .slidebox .slidelist .slideitem {position:relative;display:inline-block;vertical-align:middle;background-color:#fff;width:100%;transition:all 1s;}
+    .slidebox .slidelist .slideitem > a {display:block;width:auto;position:relative;}
+    .slidebox .slidelist .slideitem > a img {max-width:100%;}
+
+    .slidebox .slide-control [class*="control"] label {position:absolute;z-index:10;top:50%;transform:translateY(-50%);padding:20px;border-radius:50%;cursor:pointer;}
+    .slidebox .slide-control [class*="control"] label.prev {left:-50px;background:#333 url('./img/left-arrow.png') center center / 50% no-repeat;}
+    .slidebox .slide-control [class*="control"] label.next {right:-50px;background:#333 url('./img/right-arrow.png') center center / 50% no-repeat;}
+
+    [name="slide"] {display:none;}
+    #slide01:checked ~ .slidelist .slideitem {left:0;}
+    #slide02:checked ~ .slidelist .slideitem {left:-100%;}
+    #slide03:checked ~ .slidelist .slideitem {left:-200%;}
+    #slide04:checked ~ .slidelist .slideitem {left:-300%;}
+
+    .slide-control [class*="control"] {display:none;}
+    #slide01:checked ~ .slide-control .control01 {display:block;}
+    #slide02:checked ~ .slide-control .control02 {display:block;}
+    #slide03:checked ~ .slide-control .control03 {display:block;}
+    #slide04:checked ~ .slide-control .control04 {display:block;}
+
+    </style>
+    <title>추천교양</title>
+</head>
+    <body>
+        <div id="wrap">
+            <header>
+                <div class="main_intro">
+                    <div class="logo"><a href="../index.html"><img src="./image/logo2.png" alt="상명로고"></a></div>
+                </div>
+            </header>
+            <p>　</p>
+            <p>　</p>
+            <p>　</p>
+            <p>　</p>
+            <div id="container">
+                <section class="navi clearfix">
+                    <div class="search_box">
+                        <form>
+                            <input type="text" placeholder="search">
+                            <button>찾아보기</button>
+                        </form>
+                    </div>
+                    <div class="navi_box">
+                       <div class="navi_inner">
+                            <div class="form_box">
+                                <h1>LOGIN</h1>
+                                <form>
+                                    <div class="id">
+                                        <span>ID</span>
+                                        <input type="text" placeholder="아이디">
+                                    </div>
+                                    <div class="pw">
+                                         <span>PW</span>
+                                        <input type="text" placeholder="비밀번호">
+                                    </div>
+                                    <button>로그인</button>
+                                </form>
+                                <div class="login">
+                                    <ul>
+                                        <li><a href="#">회원가입</a></li>
+                                        <li><a href="#">아이디 / 비밀번호 찾기</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="nav">
+                                <nav>
+                                    <h1 class="hidden">상명네비게이션</h1>
+                                    <ul>
+                                        <li><a href="AC.html">학사일정</a></li>
+                                        <li><a href="noice_board.html">통합공지사항</a></li>
+                                        <li><a href="question_board.html">질문있어요</a></li>
+                                        <li><a href="Recommend.html">추천교양</a></li>
+                                        <li><a href="CentralClub.html">중앙동아리</a></li>
+                                        <li><a href="schoolmap.html">학교지도</a></li>
+                                        <li><a href="sangmyungcatboard.html">상냥이게시판</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                       </div>
+                    </div>
+                </section>
+                <section class="content clearfix">
+                    <div class="subnav">
+                        <ul>
+                            <li><a href="#"><strong>< 바로가기 ></strong></a></li>
+                            <li><a href="#">상명대학교 홈페이지</a></li>
+                            <li><a href="#">상명대학교 e-campus</a></li>
+                            <li><a href="#">에브리타임</a></li>
+                        </ul>
+                    </div>
+                    <div class="maincontents">
+                      <div class="slidebox">
+                  			<input type="radio" name="slide" id="slide01" checked>
+                  			<input type="radio" name="slide" id="slide02">
+                  			<input type="radio" name="slide" id="slide03">
+                  			<input type="radio" name="slide" id="slide04">
+                  			<ul class="slidelist">
+                  				<li class="slideitem">
+                  					<a><img src="./img/slide1.png"></a>
+                  				</li>
+                  				<li class="slideitem">
+                  					<a><img src="./img/slide2.png"></a>
+                  				</li>
+                  				<li class="slideitem">
+                  					<a><img src="./img/slide3.png"></a>
+                  				</li>
+                  				<li class="slideitem">
+                  					<a><img src="./img/slide4.png"></a>
+                  				</li>
+
+                  			</ul>
+                  			<div class="slide-control">
+                  				<div class="control01">
+                  					<label for="slide04" class="prev"></label>
+                  					<label for="slide02" class="next"></label>
+                  				</div>
+                  				<div class="control02">
+                  					<label for="slide01" class="prev"></label>
+                  					<label for="slide03" class="next"></label>
+                  				</div>
+                  				<div class="control03">
+                  					<label for="slide02" class="prev"></label>
+                  					<label for="slide04" class="next"></label>
+                  				</div>
+                  				<div class="control04">
+                  					<label for="slide03" class="prev"></label>
+                  					<label for="slide01" class="next"></label>
+                  				</div>
+                  			</div>
+                  		</div>
+                </section>
+            </div>
+       </div>
+    </body>
+</html>
